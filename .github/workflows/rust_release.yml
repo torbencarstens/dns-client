@@ -13,7 +13,7 @@ jobs:
       - name: Install nightly
         run: rustup update nightly
       - name: cargo publish
-        run: cargo publish --token ${{ secrets.CRATES_AUTH_TOKEN }}
+        run: cargo +nightly publish --token ${{ secrets.CRATES_AUTH_TOKEN }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0
