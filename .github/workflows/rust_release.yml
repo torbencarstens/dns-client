@@ -6,16 +6,14 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  build-release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Install nightly
         run: rustup update nightly
-      - name: Build
-        run: cargo +nightly build --verbose --release
       - name: cargo publish
-        run: cargo publish --token ${{ secrets.CRATES_AUTH_TOKEN }}
+        run: cargo +nightly publish --token ${{ secrets.CRATES_AUTH_TOKEN }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0
