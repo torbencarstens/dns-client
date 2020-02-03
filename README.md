@@ -2,6 +2,18 @@
 
 Based on [rust-dnsclient](https://github.com/jedisct1/rust-dnsclient).
 
+## Installation
+
+### cargo
+
+```shell script
+cargo +nightly install dns-client
+```
+
+### github actions
+
+A prebuilt binary is available from the [releases page](https://github.com/torbencarstens/dns-client/releases/tag/v0.0.1)
+
 ## Usage
 
 ```shell script

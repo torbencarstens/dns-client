@@ -4,8 +4,9 @@ version = "0.0.1"
 authors = ["Torben Carstens <github@carstens.tech>"]
 edition = "2018"
 repository = "https://github.com/torbencarstens/dns-client"
-license = "MIT"
+license = "ISC"
 description = "simple dns-client"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
