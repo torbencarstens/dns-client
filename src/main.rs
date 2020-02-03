@@ -7,11 +7,10 @@ use std::io;
 use std::net::{SocketAddrV4, Ipv4Addr};
 use std::str::FromStr;
 use clap::{App, Arg};
-use std::io::Error;
 
 fn main() -> io::Result<()> {
     let app = App::new("dns-client")
-        .version("0.0.1")
+        .version("0.0.2")
         .about("Lookup of a given website via different DNS servers (default is 8.8.8.8 and 1.1.1.1)")
         .author("Torben Carstens")
         .arg(Arg::with_name("target")
