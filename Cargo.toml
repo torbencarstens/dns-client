@@ -1,6 +1,6 @@
 [package]
 name = "dns-client"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Torben Carstens <github@carstens.tech>"]
 edition = "2018"
 repository = "https://github.com/torbencarstens/dns-client"
