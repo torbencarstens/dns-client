@@ -42,6 +42,7 @@ dns-client <target> [-u <dnsserver>[,...dnsserver]]
 ### Example
 
 ```shell script
-$ dns-client -u 1.1.1.1 example.com
-93.184.216.34
+$ dns-client -u 1.1.1.1,8.8.8.8 example.com
+8.8.8.8: 172.31.173.226
+1.1.1.1: 172.31.173.226
 ```
